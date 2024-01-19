@@ -2,6 +2,16 @@
 
 using namespace std;
 
+char TolowerCase(char ch){
+    if(ch >= 'a' && ch <= 'z'){
+        return ch;
+    }
+    else{
+        char temp = ch - 'A' + 'a';
+        return temp;
+    }
+}
+
 int GetLength(char name[]){
     int count = 0;
 
@@ -26,7 +36,7 @@ bool checkPalindrome(char a[] , int n){
     int e = n-1;
 
     while(s < e){
-        if(a[s] != a[e]){
+        if(TolowerCase(a[s]) != TolowerCase(a[e])){
             return 0;
         }else{
             s++;
@@ -54,8 +64,8 @@ int main(){
 
     bool palindrome = checkPalindrome(name , length);
 
-    cout << "the string is " << palindrome;
+    cout << "the string is " << palindrome << endl;
 
-    
+    cout << "Character is Lower Case : " << TolowerCase('A') << endl;
     return 0;
 }
