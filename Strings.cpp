@@ -46,6 +46,34 @@ bool checkPalindrome(char a[] , int n){
     }
 }
 
+char GetmaxOcc(string s){
+    int arr[26] = {0};
+
+    //create an array for count of characters
+    for(int i = 0; i < s.length() ; i++){
+        char ch = s[i];
+        //for lower case
+        int number = 0;
+        if(ch >= 'a' && ch <= 'z'){
+            number = ch - 'a';
+        }else if(ch >='A' && ch <= 'Z'){
+            number = ch - 'A';
+        }
+        arr[number]++;
+    }
+
+    int maxi = -1 , ans = 0;
+    for(int i = 0; i < 26; i++){
+        if(maxi < arr[i]){
+            ans = i;
+            maxi = arr[i];
+        }
+    }
+
+    char finalAns = 'a' + ans;
+    return finalAns;
+}
+
 int main(){
     char name[20];
 
@@ -67,5 +95,10 @@ int main(){
     cout << "the string is " << palindrome << endl;
 
     cout << "Character is Lower Case : " << TolowerCase('A') << endl;
+
+    string s;
+    cin >> s;
+
+    cout << "max Occuring char "<< GetmaxOcc(s) << endl;
     return 0;
 }
