@@ -1,4 +1,5 @@
 #include<iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -102,6 +103,8 @@ int main(){
     // cout << "max Occuring char "<< GetmaxOcc(s) << endl;
 
     // Home Work
+
+
     // char name[20];
     // cout << "enter name";
     // cin >> name;
@@ -114,6 +117,17 @@ int main(){
     // s[2] = '\0';
 
     // cout << s << " " << endl;
+
+    string s1 = "hello";
+        string s2 = "hello";
+
+int result = s1.compare(s2);
+
+        cout << result;
+
+        int length = s1.length();
+
+        cout << length;
 
 
     return 0;
