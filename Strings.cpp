@@ -100,5 +100,21 @@ int main(){
     cin >> s;
 
     cout << "max Occuring char "<< GetmaxOcc(s) << endl;
+
+    // Home Work
+    // char name[20];
+    // cout << "enter name";
+    // cin >> name;
+    // name[2] = '\0';
+
+    // cout<< name << " " << endl;
+
+    // string s = "hello";
+
+    // s[2] = '\0';
+
+    // cout << s << " " << endl;
+
+
     return 0;
 }
