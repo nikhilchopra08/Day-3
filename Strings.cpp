@@ -75,31 +75,31 @@ char GetmaxOcc(string s){
 }
 
 int main(){
-    char name[20];
+    // char name[20];
 
-    cout << "Enter your name" << endl;
-    cin >> name;
-    // name[2] = '\0';
-    //cin will not take the entry after space.space denotes null char \0;;
+    // cout << "Enter your name" << endl;
+    // cin >> name;
+    // // name[2] = '\0';
+    // //cin will not take the entry after space.space denotes null char \0;;
 
-    cout << "your name is " << name << endl;
+    // cout << "your name is " << name << endl;
 
-    int length = GetLength(name);
-    cout << "Length of Char Array is " << GetLength(name) << endl;
+    // int length = GetLength(name);
+    // cout << "Length of Char Array is " << GetLength(name) << endl;
 
-    Reverse(name , length);
-    cout<< "name ; " << name << endl;
+    // Reverse(name , length);
+    // cout<< "name ; " << name << endl;
 
-    bool palindrome = checkPalindrome(name , length);
+    // bool palindrome = checkPalindrome(name , length);
 
-    cout << "the string is " << palindrome << endl;
+    // cout << "the string is " << palindrome << endl;
 
-    cout << "Character is Lower Case : " << TolowerCase('A') << endl;
+    // cout << "Character is Lower Case : " << TolowerCase('A') << endl;
 
-    string s;
-    cin >> s;
+    // string s;
+    // cin >> s;
 
-    cout << "max Occuring char "<< GetmaxOcc(s) << endl;
+    // cout << "max Occuring char "<< GetmaxOcc(s) << endl;
 
     // Home Work
     // char name[20];
